@@ -1,0 +1,971 @@
+/*imporem lletra "Raleway" pels titols*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*importem lletra "Lora" per el text*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    /*Eliminems els espais*/
+    padding: 0;
+    margin: 0;
+    /*Eliminem tots els decorats*/
+    text-decoration: none; /*No enllaços subratllats*/
+    list-style: none; /*No puntets llista*/
+    box-sizing: border-box; /*Perque els elements no surtin del contenidor*/
+}
+
+h1, h2, h3{
+  font-family: "Raleway";
+  scroll-margin-top: 100px;
+}
+
+section{
+  padding-top: 100px;
+}
+
+p{
+    font-family: "Lora";
+}
+/* Estils per a la capçalera */
+header {
+    background-color:  rgb(9, 202, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%; /* Que ocupi tot l'ample */
+    height: 80px;
+  }
+  
+  /* Logo */
+  .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Menú */
+  nav {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu > li {
+    padding: 15px 20px;
+  }
+  
+  .menu > li > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu > li:hover {
+    background-color: #444;
+  }
+
+  /* ---------- Icona del menú (hamburger) ---------- */
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ---------- Checkbox ocult ---------- */
+
+.menu-toggle {
+  display: none;
+}
+
+  
+  /* Submenú */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .submenu li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    background-color: #555;
+  }
+  
+  /* Mostra el submenú quan el ratolí passa per sobre del pare */
+  .submenu-item:hover .submenu {
+    display: block;
+  }
+  
+
+
+
+
+/*****************************************************
+ESTILS PER LA SECCIÓ DE PARALLAX 
+*****************************************************/
+
+.parallax-section{
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/parallax-inici.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+/*Estils per al titol centrat*/
+.parallax-content{
+    text-align: center;
+    z-index: 10;
+}
+
+.parallax-title{
+    font-size: 80px;
+    padding: 0 300px;
+    font-family: "Raleway";
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.parallax-text{
+  font-family: "Lora";
+  font-size: 20px;
+  color: black;
+  opacity: 0.9;
+}
+
+.parallax-link{
+  color: antiquewhite;
+  background-color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 10px;  
+}
+
+.parallax-link:hover{
+  background-color: rgb(9, 202, 255);
+  color: black;
+}
+
+/*****************************************************
+ESTILS PER LA SECCIÓ DE 3 TIPUS D'ESQUI
+*****************************************************/
+
+/*Estils principals de la seccio de tres columnes*/
+.three-columns-section{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /*Espai entre columnes*/
+  margin: 20px 20px; /* Margin superior i inferior de la secció */
+  height: auto;
+}
+
+/*donem etil a la clase dels enllasos*/
+.mes-info{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/*donem etil a la clase dels enllasos per quan pasem per sobre*/
+.mes-info:hover{
+  color: white;
+  background-color:  rgb(9, 202, 255);
+}
+
+/*Estils per a cada columna*/
+.column{
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Estils per a les imatges dins de cada columna */
+.column-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Estils per als títols */
+.column-title{
+  font-size: 40px; /*Mida de la lletra del titol*/
+  margin: 10px 0; /*Marge superio i inferior del titol*/
+  color: #333; /*Color del titol*/
+  font-family: "oswald"; /*Lletra er els ttiols*/
+}
+
+/* Estils per al text dins de cada columna */
+.column-text{
+  font-size: 20px; /*Mida de la lletra del titol*/
+  font-family: "Exo2";  /*Lletra per el text*/
+  color: #666; /*Color mes clar per al text*/
+  line-height: 1.6; /* Augmentem l'espai entre línies per fer el text més llegible */
+}
+
+
+
+/*****************************************************
+                      FOOTER 
+*****************************************************/
+/*Doneem estil al contingut del footer*/
+.footer{
+    position: relative;
+    background-color: #222;
+    opacity: 0.8;
+    color: white;
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+
+.social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/*estils per els links de la clase de les icones de xarxes socials*/
+.social-icons a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px; 
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    width: 45px;
+    transition: 0.3s ease-in-out;
+}
+
+
+/*estils per quan pasem per sobre dels links de la clase de les icones de xarxes socials*/
+.social-icons a:hover{
+    transform: scale(1.2); /* Amplia el logo un 20% */
+}
+.social-icons a img{
+    width: 24px; /* Ajusta la mida de les icones */
+    height: 24px;
+    
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-bottom p{
+    font-family: "Birds";
+}
+.footer-logo {
+    height: 50px;
+    width: auto;
+}
+
+
+
+
+
+/*****************************************************
+                PAGINA CONSEJOS I MATERIAL
+*****************************************************/
+
+/*****************************************************
+                      BANNER 
+*****************************************************/
+.banner2{
+  background-image: url(../img/banner-consells.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrat vertical */
+  align-items: center;     /* Centrat horitzontal */
+  text-align: center;
+}
+
+.banner2 h1{
+  font-weight: bold;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.banner2 p{
+  font-size: 20px;
+}
+.contingutbanner2{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 100px;
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+
+
+.bloque {
+  padding: 60px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bloque h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.bloque h3 {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.bloque p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.bloque ul {
+  list-style: disc;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
+/* 📬 CRIDA A L’ACCIÓ */
+.crida-accio {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-image: url(../img/call-us.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  
+}
+
+.crida-accio h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.crida-accio p {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.crida-accio .boto {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-bottom: 40px;
+}
+
+.crida-accio .boto:hover {
+  background-color:  rgb(9, 202, 255);
+}
+
+/*****************************************************
+                PAGINA DESTINS
+*****************************************************/
+/* -------------------------
+   Secció d'introducció
+-------------------------- */
+.destins-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto 40px;
+}
+
+.destins-intro h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.destins-intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* -------------------------
+   Contenidor de continents
+   (targetes en format flexible)
+-------------------------- */
+.destins-continents {
+  display: flex; /* Disposició horitzontal flexible */
+  flex-wrap: wrap; /* Permet que les targetes baixin a la següent línia si cal */
+  justify-content: center; /* Centra les targetes horitzontalment */
+  gap: 30px; /* Espai entre targetes */
+  padding: 20px;
+}
+
+/* -------------------------
+   Estil de cada targeta
+-------------------------- */
+.continent {
+  width: 280px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;           /* Amaga elements que sobresurtin */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Ombra suau */
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Imatge de cada targeta */
+.continent img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;          /* Manté proporció sense deformar la imatge */
+}
+
+/* Títol del continent */
+.continent h2 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #2980b9;
+}
+
+/* Text descriptiu */
+.continent p {
+  font-size: 1rem;
+  padding: 0 15px;
+  color: #666;
+}
+
+/* Botó amb enllaç */
+.boto {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* Efecte hover del botó */
+.boto:hover {
+  background-color:  rgb(9, 202, 255);
+  color: white;
+}
+
+/*****************************************************
+                PAGINA EUROPA
+*****************************************************/
+
+/*SECCIO PARALLAX*/
+.parallax-europe{
+  background-image: url(../img/parallax-europa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content-europe{
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  text-align: center;
+}
+.title-europe{
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.text-europe{
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/*****************************
+       SECCIO ESTACIONS
+*****************************/
+
+.estaciones {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.grid-estaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  margin: 20px;
+}
+
+.estacion {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.estacion img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.estacion h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.estacion p{
+  margin-bottom: 10px;
+}
+
+.link-estacion{
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+.link-estacion:hover{
+  background-color: rgb(9, 202, 255);
+}
+
+.routes-container h1{
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/*****************************************************
+                PAGINA ASIA
+*****************************************************/
+
+/*SECCIO PARALLAX*/
+.parallax-asia{
+  background-image: url(../img/parallax-asia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content-asia{
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  text-align: center;
+}
+.title-asia{
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.text-asia{
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/*****************************************************
+                PAGINA AMERICA
+*****************************************************/
+
+/*SECCIO PARALLAX*/
+.parallax-america{
+  background-image: url(../img/parallax-america.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content-america{
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  text-align: center;
+}
+.title-america{
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.text-america{
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/*****************************************************
+                PAGINA GALERIA
+*****************************************************/
+.galeria {
+  padding: 40px 20px;
+  background-color: #f0f8ff; /* blau clar */
+  text-align: center;
+}
+
+.galeria h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #003366;
+  margin-top: 60px;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-galeria img {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.05);
+}
+
+
+/*****************************************************
+                PAGINA CONTACTO
+*****************************************************/
+
+
+
+.formulario-contacto {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.formulario-contacto h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.formulario-contacto p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+/*****************************************************
+                COMENCEM RESPONSIVE
+*****************************************************/
+
+
+/* Adaptació per a dispositius amb amplada màxima de 768px (tauletes i mòbils mitjans) */
+@media (max-width: 768px) {
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: none;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle:checked + .menu-icon + nav .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .submenu {
+    position: static;
+    box-shadow: none;
+    padding-left: 15px;
+  }
+
+  .submenu-item:hover .submenu {
+    display: none;
+  }
+
+  .submenu-item .submenu {
+    display: block;
+  }
+}
+
+
+
+  /* ------------------------------------CONTACTE-------------------------------------- */
+  .formulario-contacto {
+    padding: 20px; /* Redueix l'espai interior per a pantalles més petites */
+  }
+
+  .formulario-contacto h2 {
+    font-size: 24px; /* Redueix la mida de la font del títol */
+  }
+
+  .formulario-contacto p {
+    font-size: 14px; /* Redueix la mida de la font del text descriptiu */
+  }
+
+  input, textarea {
+    padding: 10px; /* Redueix l'espai interior dels camps per adaptar-se a pantalles petites */
+    font-size: 14px; /* Redueix la mida de la font per als camps */
+  }
+
+  button {
+    font-size: 16px; /* Redueix la mida de la font del botó */
+    padding: 10px 20px; /* Redueix l'espai interior del botó */
+  }
+
+/* Adaptació per a mòbils mpetits (fins a 480px) */
+@media (max-width: 480px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  .menu {
+    top: 60px;
+    padding: 15px;
+  }
+
+  .menu li {
+    margin-bottom: 8px;
+  }
+
+  .menu-icon {
+    align-self: flex-end;
+  }
+
+    /* ------------------------------------CONTACTE-------------------------------------- */
+  .formulario-contacto {
+    padding: 15px; /* Redueix encara més l'espai interior */
+    max-width: 90%; /* Fa que el formulari ocupi el 90% de l'ample de la pantalla */
+  }
+
+  .formulario-contacto h2 {
+    font-size: 22px; /* Redueix la mida del títol */
+  }
+
+  .formulario-contacto p {
+    font-size: 13px; /* Redueix la mida del text descriptiu */
+  }
+
+  input, textarea {
+    padding: 8px; /* Redueix l'espai interior dels camps */
+    font-size: 14px; /* Redueix la mida de la font per als camps */
+  }
+
+  button {
+    font-size: 16px; /* Manté la mida del botó però el fa més petit */
+    padding: 8px 16px; /* Redueix l'espai interior del botó */
+  }
+}
