@@ -419,7 +419,7 @@ ESTILS PER LA SECCIÓ DE 3 TIPUS D'ESQUI
 /* 📬 CRIDA A L’ACCIÓ */
 .crida-accio {
   width: 100%;
-  height: 100vh;
+  height: 500px;
   text-align: center;
   background-image: url(../img/call-us.jpg);
   background-size: cover;
@@ -466,7 +466,8 @@ ESTILS PER LA SECCIÓ DE 3 TIPUS D'ESQUI
 .destins-intro {
   text-align: center;
   max-width: 800px;
-  margin: 60px auto 40px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .destins-intro h1 {
@@ -508,7 +509,7 @@ ESTILS PER LA SECCIÓ DE 3 TIPUS D'ESQUI
 .continent img {
   width: 100%;
   height: 180px;
-  object-fit: cover;          /* Manté proporció sense deformar la imatge */
+  object-fit: cover;/* Manté proporció sense deformar la imatge */
 }
 
 /* Títol del continent */
@@ -774,8 +775,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   box-sizing: border-box;
+  padding: 100px 20px 20px 20px
 }
 
 .formulario-contacto {
