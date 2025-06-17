@@ -29,12 +29,11 @@ p{
 }
 /* Estils per a la capçalera */
 header {
-    background-color:  rgb(9, 202, 255);
+   background-color:  rgb(9, 202, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    
   }
   
   /* Logo */
@@ -83,23 +82,6 @@ header {
   .menu > li:hover {
     background-color: #444;
   }
-
-  /* ---------- Icona del menú (hamburger) ---------- */
-
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  user-select: none;
-}
-
-/* ---------- Checkbox ocult ---------- */
-
-.menu-toggle {
-  display: none;
-}
-
-  
   /* Submenú */
   .submenu {
     display: none;
@@ -699,20 +681,28 @@ ESTILS PER LA SECCIÓ DE 3 TIPUS D'ESQUI
                 PAGINA AMERICA
 *****************************************************/
 
-/*SECCIO PARALLAX*/
-.parallax-america{
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.parallax-america {
   background-image: url(../img/parallax-america.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   background-attachment: fixed;
   height: 100vh;
+  width: 100vw;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
 }
+
 
 .content-america{
   position: relative;
