@@ -8,7 +8,7 @@ Este proyecto es una web informativa y visualmente atractiva dedicada al mundo d
 - Información sobre diferentes modalidades: esquí de montaña, eslalon y esquí alpino
 - Diapositivas con paisajes y textos evocadores
 - Estructura clara y navegación sencilla
-- Diseño responsive adaptable a dispositivos móviles (En proceso)
+- Diseño responsive adaptable a dispositivos móviles y tabletas (En proceso)
 
 ## 🧱 Tecnologías utilizadas
 
@@ -25,10 +25,16 @@ Este proyecto es una web informativa y visualmente atractiva dedicada al mundo d
 ## 🚧 Estado del proyecto
 
 ✅ Fase inicial completada  
-🛠️ En desarrollo: nuevas secciones y mejoras visuales
+🛠️ En desarrollo: Diseño responsive adaptable a dispositivos móviles y tabletas (En proceso)
+
 
 ## 📌 Autor
 
 Creado por Pau Morilla Codina como parte de mi aprendizaje en desarrollo web front-end.  
 Estoy abierto/a a sugerencias y colaboraciones.
+
+## 🌐 Como ver la web
+
+Puedes ver la pagina web a traves de este enlace: https://esqui.webcindario.com
+
 
