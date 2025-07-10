@@ -4,7 +4,7 @@ Este proyecto es una web informativa y visualmente atractiva dedicada al mundo d
 
 ## 🌐 Características principales
 
-- Página de inicio con efecto parallax e imágenes panorámicas
+- Página de inicio con slides, efecto parallax y imágenes panorámicas
 - Información sobre diferentes modalidades: esquí de montaña, eslalon y esquí alpino
 - Diapositivas con paisajes y textos evocadores
 - Estructura clara y navegación sencilla
