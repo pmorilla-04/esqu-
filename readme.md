@@ -8,12 +8,13 @@ Este proyecto es una web informativa y visualmente atractiva dedicada al mundo d
 - Información sobre diferentes modalidades: esquí de montaña, eslalon y esquí alpino
 - Diapositivas con paisajes y textos evocadores
 - Estructura clara y navegación sencilla
-- Diseño responsive adaptable a dispositivos móviles
+- Diseño responsive adaptable a dispositivos móviles (En proceso)
 
 ## 🧱 Tecnologías utilizadas
 
 - HTML5  
-- CSS3  
+- CSS3
+- Bootstrap
 
 ## 🖼️ Contenido destacado
 
