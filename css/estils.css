@@ -764,7 +764,7 @@ html, body {
                 PAGINA CONTACTO
 *****************************************************/
 
-.form{
+.form {
   background-image: url(../img/fondo-formulari.jpg);
   background-size: cover;
   background-position: center;
@@ -776,11 +776,12 @@ html, body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 100px 20px 20px 20px
+  padding: 20px; /* o cap padding si no cal */
 }
 
+
 .formulario-contacto {
-  background-color: white;
+  background-color: transparent;
   padding: 40px;
   border: 2px solid black;
   border-radius: 10px;
@@ -794,7 +795,7 @@ html, body {
 .formulario-contacto h2 {
   text-align: center;
   font-size: 28px;
-  color: #333;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -807,7 +808,8 @@ html, body {
 
 label {
   font-size: 16px;
-  color: #333;
+  color: #000;  
+  font-weight: bold;
   display: block;
   margin-bottom: 8px;
 }
@@ -827,7 +829,7 @@ textarea {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #3f91e8;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -838,12 +840,13 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: rgb(9, 202, 255)
 }
 
-input[type="checkbox"] {
-  margin-right: 10px;
-}
+
+
+
+
 
 
 
